@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nilulosite-rlrsr_jd110"
+version = "0.1.0"
+description = "对内容做归一化与分片比对，找出强化学习研究员·显存碎片与分配策略上的重复项并按相似度归并"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "nilulosite" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://nilulosite.github.io"
+Repository = "https://github.com/nilulosite/rlrsr_jd110"
+Issues = "https://github.com/nilulosite/rlrsr_jd110/issues"
+
+[project.scripts]
+rlrsr_jd110 = "rlrsr_jd110:main"
+
+[tool.setuptools]
+py-modules = ["rlrsr_jd110"]
